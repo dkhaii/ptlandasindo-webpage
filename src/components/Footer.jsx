@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Contact } from "./";
-import logo from "../assets/images/landasindo.png"
+import logo from "../assets/images/landasindo.png";
 
 const Footer = () => {
   return (
     <section id="footer" className="w-full">
       <div className="flex flex-col lg:flex-row">
         <div className="py-10 pr-20 w-full">
-          <img src={logo} alt="" className="w-14"/>
+          <div className="flex">
+            <img src={logo} alt="" className="w-14" />
+            <h1 className="flex items-center ml-3 text-lg font-semibold">PT. Landasindo</h1>
+          </div>
           <p className="pt-5 text-sm leading-loose">
             Graha SISTRACO, 3rd floor <br /> Jl. Perak Barat No. 75 Surabaya 60177, <br /> Jawa Timur, Indonesia
           </p>
@@ -34,19 +37,29 @@ const Footer = () => {
           <div className="mt-5 flex text-sm gap-10">
             <ul className="flex flex-col gap-3">
               <li>
-                <Link to="/" className="transition duration-300 hover:text-accent">Home</Link>
+                <Link to="/" className="transition duration-300 hover:text-accent">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about-us" className="transition duration-300 hover:text-accent">About Us</Link>
+                <Link to="/about-us" className="transition duration-300 hover:text-accent">
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/product" className="transition duration-300 hover:text-accent">Product</Link>
+                <Link to="/product" className="transition duration-300 hover:text-accent">
+                  Product
+                </Link>
               </li>
               <li>
-                <Link to="/gallery" className="transition duration-300 hover:text-accent">Gallery</Link>
+                <Link to="/gallery" className="transition duration-300 hover:text-accent">
+                  Gallery
+                </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="transition duration-300 hover:text-accent">Contact Us</Link>
+                <Link to="/contact-us" className="transition duration-300 hover:text-accent">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
