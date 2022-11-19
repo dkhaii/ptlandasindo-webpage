@@ -1,12 +1,12 @@
 import React from 'react'
-import { Navbar, Hero } from "../"
+import { NavNormal, Hero } from "../"
 
 const AboutUs = () => {
   return (
     <div className='w-full overflow-hidden'>
       <div className="sm:px-40 px-16 flex justify-center items-center w-full">
         <div className="w-full">
-          <Navbar></Navbar>
+          <NavNormal></NavNormal>
         </div>
       </div>
 

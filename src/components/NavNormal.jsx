@@ -3,27 +3,16 @@ import { Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 import logo from "../assets/images/landasindo.png";
 
-const Navbar = () => {
+const NavNormal = () => {
   const [trigger, setTrigger] = useState(false);
-  const [color, setColor] = useState(false);
-
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={color ? "transition_opacity bg-white shadow-lg fixed left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20" : "fixed left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20"}>
-      <div className={color ? "flex font-poppins font-semibold text-sm text-secondary" : "flex font-poppins font-semibold text-sm text-white"}>
+    <nav className="fixed left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20">
+      <div className="flex font-poppins font-semibold text-sm text-secondary">
         <img src={logo} alt="logo-nav" className="w-10" />
         <h1 className="flex items-center ml-2">PT. Landasindo</h1>
       </div>
-      <div className={color ? "flex font-poppins font-semibold text-sm text-secondary" : "flex font-poppins font-semibold text-sm text-white"}>
+      <div className="flex font-poppins font-semibold text-sm text-secondary">
         <ul className="hidden list-none lg:flex justify-end items-center flex-none">
           <li className="mr-10">
             <Link to="/" className="transition duration-300 hover:text-accent">
@@ -52,7 +41,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="lg:hidden flex flex-1 justify-end items-center">
-          <Hamburger size={24} color={color ? "#03254c" : "#fff"} onToggle={() => setTrigger((prev) => !prev)} rounded />
+          <Hamburger size={24} color="#fff" onToggle={() => setTrigger((prev) => !prev)} rounded />
           <div
             className={trigger ? "flex justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-secondary" : "hidden justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-white"}
           >
@@ -90,4 +79,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavNormal;
