@@ -7,7 +7,7 @@ const NavNormal = () => {
   const [trigger, setTrigger] = useState(false);
 
   return (
-    <nav className="fixed left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20">
+    <nav className="fixed bg-white left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20">
       <div className="flex font-poppins font-semibold text-sm text-secondary">
         <img src={logo} alt="logo-nav" className="w-10" />
         <h1 className="flex items-center ml-2">PT. Landasindo</h1>
@@ -41,7 +41,7 @@ const NavNormal = () => {
           </li>
         </ul>
         <div className="lg:hidden flex flex-1 justify-end items-center">
-          <Hamburger size={24} color="#fff" onToggle={() => setTrigger((prev) => !prev)} rounded />
+          <Hamburger size={24} onToggle={() => setTrigger((prev) => !prev)} rounded />
           <div
             className={trigger ? "flex justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-secondary" : "hidden justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-white"}
           >
