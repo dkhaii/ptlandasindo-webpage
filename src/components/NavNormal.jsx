@@ -5,9 +5,20 @@ import logo from "../assets/images/landasindo.png";
 
 const NavNormal = () => {
   const [trigger, setTrigger] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  const addShadow = () => {
+    if (window.scrollY >= 90) {
+      setShadow(true);
+    } else {
+      setShadow(false);
+    }
+  };
+
+  window.addEventListener("scroll", addShadow);
 
   return (
-    <nav className="fixed bg-white left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20">
+    <nav className={shadow ? "fixed bg-white shadow-lg left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20" : "fixed bg-white left-0 sm:px-40 px-16 w-full py-8 flex justify-between items-center z-20"}>
       <div className="flex font-poppins font-semibold text-sm text-secondary">
         <img src={logo} alt="logo-nav" className="w-10" />
         <h1 className="flex items-center ml-2">PT. Landasindo</h1>
