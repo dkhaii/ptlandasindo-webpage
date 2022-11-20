@@ -3,7 +3,7 @@ import oilBarrel from "../../assets/images/iolbarrel.png";
 
 const Products = () => {
   return (
-    <section id="product" className="sm:px-40 px-16 pt-28 lg:flex lg:flex-col w-full">
+    <section id="product" className="sm:px-80 px-16 pt-28 lg:flex lg:flex-col w-full">
       <div className="flex items-center flex-col">
         <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">
           OUR PRODUCT

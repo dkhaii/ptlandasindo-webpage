@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="absolute w-full h-[300px] bg-secondary bg-opacity-90"></div>
         <img src={BgContact} alt="" className="object-none object-center w-full" />
       </div>
-      <div className="absolute sm:px-40 px-16 flex flex-col lg:flex-row w-full py-10 lg:py-20">
+      <div className="absolute sm:px-80 px-16 flex flex-col lg:flex-row w-full py-10 lg:py-20">
         <div className="flex-1">
           <h1 className="text-white font-semibold text-4xl lg:text-5xl py-3">Get In Touch</h1>
           <p className="text-white text-sm lg:text-xl leading-relaxed py-3">

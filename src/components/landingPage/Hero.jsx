@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="absolute min-h-screen w-full bg-darker bg-opacity-90"></div>
         <img src={gambar3} alt="gambar-3" className="object-cover"/>
       </div>
-      <div className="sm:px-40 px-16 py-32 flex-1 flex justify-center items-start flex-col">
+      <div className="sm:px-80 px-16 py-32 flex-1 flex justify-center items-start flex-col">
         <div className="flex flex-row justify-between items-center w-full">
           <div className="w-full">
             <h1 className="flex-1 font-poppins font-semibold text-[45px] sm:text-[65px] text-white leading-[55px] sm:leading-[80px]">

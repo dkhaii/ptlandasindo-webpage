@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-white sm:px-40 px-16 py-28 flex flex-row w-full">
+    <section id="services" className="bg-white sm:px-80 px-16 py-28 flex flex-row w-full">
       <div className="flex flex-col items-start w-full">
         <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">LANDASINDO FUTURE</div>
         <h1 className="mt-2 text-[40px] lg:text-4xl font-semibold leading-[55px] sm:leading-[80px]">
