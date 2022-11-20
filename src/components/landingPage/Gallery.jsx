@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="bg-base py-28 flex flex-col w-full">
+    <section id="gallery" className="sm:px-40 px-16 bg-base py-28 flex flex-col w-full">
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 flex flex-col items-start">
           <div className="flex justify-center bg-white px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">GALLERY</div>

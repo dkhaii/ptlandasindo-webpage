@@ -1,13 +1,11 @@
 import React from "react";
 import oilBarrel from "../../assets/images/iolbarrel.png";
 
-const Products = () => {
+const ProductDesc = () => {
   return (
-    <section id="product" className="sm:px-40 px-16 pt-28 lg:flex lg:flex-col w-full">
+    <section id="product" className="sm:px-40 px-16 bg-white pt-28 lg:flex lg:flex-col w-full">
       <div className="flex items-center flex-col">
-        <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">
-          OUR PRODUCT
-        </div>
+        <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">OUR PRODUCT</div>
         <div className="lg:mt-2">
           <h1 className="text-[40px] lg:text-4xl font-semibold">Products We Sell</h1>
         </div>
@@ -38,9 +36,8 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="divider"></div>
     </section>
   );
 };
 
-export default Products;
+export default ProductDesc;
