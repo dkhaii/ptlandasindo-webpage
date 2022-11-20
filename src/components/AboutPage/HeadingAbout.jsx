@@ -2,7 +2,7 @@ import React from "react";
 
 const HeadingAbout = () => {
   return (
-    <section id="heading-about" className="sm:px-40 px-16 flex flex-col w-full">
+    <section id="heading-about" className="sm:px-80 px-16 flex flex-col w-full">
       <div className="flex pt-32 pb-14 flex-1 justify-center items-start flex-col">
         <div className="flex flex-row pt-10 justify-between items-center w-full">
           <div className="w-full">
