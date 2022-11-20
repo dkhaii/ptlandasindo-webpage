@@ -4,7 +4,7 @@ import { Navbar, Hero, About, Products, Gallery, Contact, Footer } from "../";
 const Home = () => {
   return (
     <div className="w-full overflow-hidden">
-      <div className="sm:px-40 px-16 flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full">
         <div className="w-full">
           <Navbar></Navbar>
         </div>
@@ -16,19 +16,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-white sm:px-40 px-16 flex justify-center items-center w-full">
+      <div className="bg-white flex justify-center items-center w-full">
         <div className="w-full">
           <Products></Products>
         </div>
       </div>
 
-      <div className="bg-white sm:px-40 px-16 flex justify-center items-center w-full">
+      <div className="bg-white flex justify-center items-center w-full">
         <div className="w-full">
           <About></About>
         </div>
       </div>
 
-      <div className="bg-base sm:px-40 px-16 flex justify-center items-center w-full">
+      <div className="bg-base flex justify-center items-center w-full">
         <div className="w-full">
           <Gallery></Gallery>
         </div>
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-white sm:px-40 px-16 flex justify-center items-center w-full">
+      <div className="bg-white flex justify-center items-center w-full">
         <div className="w-full">
           <Footer></Footer>
         </div>

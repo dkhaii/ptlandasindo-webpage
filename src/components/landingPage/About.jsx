@@ -4,7 +4,7 @@ import ornamen from "../../assets/svg/dotOrnament.svg";
 
 const About = () => {
   return (
-    <section id="about" className="pt-28 lg:flex lg:flex-col w-full min-h-screen">
+    <section id="about" className="sm:px-40 px-16 pt-28 lg:flex lg:flex-col w-full min-h-screen">
       <div className="flex-1 flex items-start flex-col">
         <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">OUR BUSINESS</div>
         <div className="lg:mt-2">
