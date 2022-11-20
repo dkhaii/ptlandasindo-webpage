@@ -15,7 +15,7 @@ const Description = () => {
         </p>
       </div>
       <div className="flex w-full h-full object-cover">
-        <img src={gambar5} alt="" />
+        <img src={gambar5} alt="gambar5" />
       </div>
     </section>
   );
