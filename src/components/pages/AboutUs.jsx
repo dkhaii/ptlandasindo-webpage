@@ -1,5 +1,5 @@
 import React from "react";
-import { NavNormal, HeadingAbout, HeadingImage, Description, Contact, Footer } from "../";
+import { NavNormal, HeadingAbout, HeadingImage, Services, Description, Contact, Footer } from "../";
 
 const AboutUs = () => {
   return (
@@ -19,6 +19,12 @@ const AboutUs = () => {
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
           <HeadingImage></HeadingImage>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center w-full">
+        <div className="w-full">
+          <Services></Services>
         </div>
       </div>
 
