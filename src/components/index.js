@@ -9,5 +9,6 @@ import Footer from "./Footer";
 import HeadingAbout from "./AboutPage/HeadingAbout";
 import HeadingImage from "./AboutPage/HeadingImage";
 import Description from "./AboutPage/Description";
+import Services from "./AboutPage/Services";
 
-export { Navbar, NavNormal, Footer, About, Contact, Gallery, Hero, Products, HeadingAbout, HeadingImage, Description };
+export { Navbar, NavNormal, Footer, About, Contact, Gallery, Hero, Products, HeadingAbout, HeadingImage, Description, Services };
