@@ -4,7 +4,7 @@ import BgContact from "../../assets/images/gambar2.jpg";
 const Contact = () => {
   return (
     <section id="contact" className="flex w-full h-[300px]">
-      <div className="-z-10">
+      <div className="">
         <div className="absolute w-full h-[300px] bg-secondary bg-opacity-90"></div>
         <img src={BgContact} alt="" className="object-none object-center w-full" />
       </div>

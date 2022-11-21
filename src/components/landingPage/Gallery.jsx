@@ -1,14 +1,15 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
 const Gallery = () => {
   return (
     <section id="gallery" className="sm:px-80 px-16 bg-base py-28 flex flex-col w-full">
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 flex flex-col items-start">
-          <div className="flex justify-center bg-white px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">GALLERY</div>
-          <div className="lg:mt-2">
-            <h1 className="text-[40px] lg:text-4xl font-semibold">Gallery from Landasindo</h1>
-          </div>
+          <SectionTitle content={{ 
+            subTitle: "GALLERY",
+            title: "Gallery from Landasindo"
+           }}/>
         </div>
         <div className="mt-5 flex items-end">
           <button className="btn btn-outline btn-accent text-lg px-16">LOAD MORE </button>

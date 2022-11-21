@@ -1,15 +1,18 @@
 import React from "react";
+import SectionTitle from "../landingPage/SectionTitle";
 
 const Services = () => {
   return (
     <section id="services" className="bg-white sm:px-80 px-16 py-28 flex flex-row w-full">
-      <div className="flex flex-col items-start w-full">
-        <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">LANDASINDO FUTURE</div>
-        <h1 className="mt-2 text-[40px] lg:text-4xl font-semibold leading-[55px] sm:leading-[80px]">
-          The Future Of <br /> Our Company
-        </h1>
+      <div className="flex flex-col items-start w-[400px]">
+        <SectionTitle
+          content={{
+            subTitle: "LANDASINDO FUTURE",
+            title: "The Future Of Our Company",
+          }}
+        />
       </div>
-      <div className="flex flex-row w-full gap-5">
+      <div className="flex justify-end flex-row w-full gap-5">
         <div className="card w-96 bg-base-100 ">
           <div className="card-body">
             <h2 className="card-title text-secondary text-2xl">Vission</h2>

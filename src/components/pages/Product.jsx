@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavNormal, HeadingProduct, HeadingImage, ProductDesc, Contact, Footer } from "../"
+import { NavNormal, HeadingPage, HeroImage, ProductDesc, Contact, Footer } from "../"
+import gambar6 from "../../assets/images/gambar6.jpg"
 
 const Product = () => {
   return (
@@ -12,13 +13,16 @@ const Product = () => {
       
       <div className='flex justify-center items-center w-full'>
         <div className='w-full'>
-          <HeadingProduct></HeadingProduct>
+          <HeadingPage content={{ 
+            title: "We come up with high quality products and good service",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+           }}/>
         </div>
       </div>
       
       <div className='flex justify-center items-center w-full'>
         <div className='w-full'>
-          <HeadingImage></HeadingImage>
+          <HeroImage content={{ imageUrl: gambar6 }}/>
         </div>
       </div>
       
