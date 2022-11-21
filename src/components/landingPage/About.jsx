@@ -1,15 +1,16 @@
 import React from "react";
 import gambar1 from "../../assets/images/gambar1.jpg";
 import ornamen from "../../assets/svg/dotOrnament.svg";
+import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
     <section id="about" className="sm:px-80 px-16 pt-28 lg:flex lg:flex-col w-full min-h-screen">
       <div className="flex-1 flex items-start flex-col">
-        <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">OUR BUSINESS</div>
-        <div className="lg:mt-2">
-          <h1 className="text-[40px] lg:text-4xl font-semibold">About Us</h1>
-        </div>
+        <SectionTitle content={{ 
+          subTitle: "OUR BUSINESS",
+          title: "About Us"
+         }}/>
         <div className="py-20 flex flex-col lg:flex-row lg:gap-10">
           <div className="flex justify-center">
             <img src={gambar1} alt="gambar1" className="w-80 mb-5 lg:w-96 rounded-xl shadow-xl" />
