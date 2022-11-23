@@ -23,10 +23,10 @@ const Gallery = () => {
 
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <GallerySection/>
+          <GallerySection />
         </div>
       </div>
-      
+
       {/* <div className="flex justify-center items-center w-full">
         <div className="w-full">
           <Contact />
@@ -35,7 +35,12 @@ const Gallery = () => {
 
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <Footer />
+          <Footer
+            color={{
+              bgColor: "bg-darker",
+              textColor: "text-white",
+            }}
+          />
         </div>
       </div>
     </div>

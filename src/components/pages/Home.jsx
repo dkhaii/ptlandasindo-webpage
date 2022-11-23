@@ -42,7 +42,12 @@ const Home = () => {
 
       <div className="bg-white flex justify-center items-center w-full">
         <div className="w-full">
-          <Footer></Footer>
+          <Footer
+            color={{
+              bgColor: "bg-white",
+              textColor: "text-secondary",
+            }}
+          ></Footer>
         </div>
       </div>
     </div>

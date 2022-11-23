@@ -47,7 +47,10 @@ const AboutUs = () => {
       </div>
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <Footer></Footer>
+          <Footer color={{ 
+            bgColor: "bg-white",
+            textColor: "text-secondary"
+           }}></Footer>
         </div>
       </div>
     </div>
