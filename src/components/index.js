@@ -17,5 +17,7 @@ import DropdownCard from "./productPage/DropdownCard";
 import GalleryCard from "./galleryPage/GalleryCard";
 import GallerySection from "./galleryPage/GallerySection";
 import ImageModal from "./galleryPage/ImageModal";
+import HeadingMap from "./contactPage/HeadingMap";
+import ContactList from "./contactPage/ContactList";
 
-export { Navbar, NavNormal, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal };
+export { Navbar, NavNormal, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList };
