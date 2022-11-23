@@ -6,9 +6,7 @@ const GallerySection = () => {
   const [image, setImage] = useState("");
 
   const getImg = (imageUrl) => {
-    if (imageUrl) {
-      setImage(imageUrl);
-    }
+    setImage(imageUrl);
   };
 
   return (
@@ -36,6 +34,16 @@ const GallerySection = () => {
         />
         <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
 
+        <GalleryCard
+          content={{
+            imageUrl: "https://placeimg.com/400/225/arch",
+            title: "Judul Gambar",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }}
+          open={() => setIsModal(true)}
+          getImg={getImg}
+        />
+        <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
 
         <GalleryCard
           content={{
@@ -48,7 +56,6 @@ const GallerySection = () => {
         />
         <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
 
-
         <GalleryCard
           content={{
             imageUrl: "https://placeimg.com/400/225/arch",
@@ -60,7 +67,6 @@ const GallerySection = () => {
         />
         <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
 
-
         <GalleryCard
           content={{
             imageUrl: "https://placeimg.com/400/225/arch",
@@ -71,20 +77,6 @@ const GallerySection = () => {
           getImg={getImg}
         />
         <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
-
-
-        <GalleryCard
-          content={{
-            imageUrl: "https://placeimg.com/400/225/arch",
-            title: "Judul Gambar",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }}
-          open={() => setIsModal(true)}
-          getImg={getImg}
-        />
-        <ImageModal open={isModal} close={() => setIsModal(false)} image={image} />
-
-
       </div>
     </section>
   );
