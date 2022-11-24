@@ -1,7 +1,10 @@
 import React from "react";
 import { Navbar, HeadingPage, GallerySection, Footer } from "../";
+import { TabTitle } from "../../../utils/GeneralFunction";
 
 const Gallery = () => {
+  TabTitle("PT Landasindo | Gallery");
+  
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">

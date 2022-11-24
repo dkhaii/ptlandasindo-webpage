@@ -1,7 +1,10 @@
 import React from "react";
 import { Navbar, HeadingMap, ContactList, Footer } from "../";
+import { TabTitle } from "../../../utils/GeneralFunction";
 
 const ContactUs = () => {
+  TabTitle("PT Landasindo | Contact Us");
+  
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
