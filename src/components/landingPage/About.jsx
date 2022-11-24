@@ -5,12 +5,15 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section id="about" className="sm:px-80 px-16 pt-28 lg:flex lg:flex-col w-full min-h-screen">
-      <div className="flex-1 flex items-start flex-col">
-        <SectionTitle content={{ 
+    <section id="about" className="xl:px-80 md:px-40 sm:px-16 px-5 pt-28 lg:flex lg:flex-col w-full min-h-screen">
+      <div className="flex-1 flex items-center md:items-start flex-col">
+        <SectionTitle 
+        content={{ 
           subTitle: "OUR BUSINESS",
           title: "About Us"
-         }}/>
+         }}
+         bgColor={"bg-natural"}
+         />
         <div className="py-20 flex flex-col lg:flex-row lg:gap-10">
           <div className="flex justify-center">
             <img src={gambar1} alt="gambar1" className="w-80 mb-5 lg:w-96 rounded-xl shadow-xl" />

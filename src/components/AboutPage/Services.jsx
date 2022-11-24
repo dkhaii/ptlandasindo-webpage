@@ -3,7 +3,7 @@ import SectionTitle from "../landingPage/SectionTitle";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-white sm:px-80 px-16 py-28 flex flex-row w-full">
+    <section id="services" className="bg-white xl:px-80 md:px-40 px-16 py-28 flex flex-row w-full">
       <div className="flex flex-col items-start w-[400px]">
         <SectionTitle
           content={{
