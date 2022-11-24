@@ -1,5 +1,5 @@
 import React from "react";
-import { NavNormal, HeadingPage, HeroImage, ProductDesc, Contact, Footer } from "../";
+import { Navbar, HeadingPage, HeroImage, ProductDesc, Contact, Footer } from "../";
 import gambar6 from "../../assets/images/gambar6.jpg";
 
 const Product = () => {
@@ -7,7 +7,14 @@ const Product = () => {
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <NavNormal></NavNormal>
+          <Navbar
+            classes={{
+              transition: "",
+              bg: "bg-white",
+              textScroll: "text-secondary",
+              textStatic: "text-secondary",
+            }}
+          />
         </div>
       </div>
 

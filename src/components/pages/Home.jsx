@@ -6,7 +6,14 @@ const Home = () => {
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <Navbar></Navbar>
+          <Navbar
+            classes={{
+              transition: "fade-in",
+              bg: "",
+              textScroll: "text-secondary",
+              textStatic: "text-white",
+            }}
+          ></Navbar>
         </div>
       </div>
 

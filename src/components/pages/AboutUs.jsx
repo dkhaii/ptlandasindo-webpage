@@ -1,5 +1,5 @@
 import React from "react";
-import { NavNormal, HeroImage, HeadingPage, Services, Description, Contact, Footer } from "../";
+import { Navbar, HeroImage, HeadingPage, Services, Description, Contact, Footer } from "../";
 import gambar4 from "../../assets/images/gambar4.jpg";
 
 const AboutUs = () => {
@@ -7,7 +7,14 @@ const AboutUs = () => {
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <NavNormal></NavNormal>
+          <Navbar
+            classes={{
+              transition: "",
+              bg: "bg-white",
+              textScroll: "text-secondary",
+              textStatic: "text-secondary",
+            }}
+          />
         </div>
       </div>
 
@@ -24,7 +31,7 @@ const AboutUs = () => {
 
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <HeroImage content={{ imageUrl: gambar4 }}/>
+          <HeroImage content={{ imageUrl: gambar4 }} />
         </div>
       </div>
 
@@ -47,10 +54,12 @@ const AboutUs = () => {
       </div>
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <Footer color={{ 
-            bgColor: "bg-white",
-            textColor: "text-secondary"
-           }}></Footer>
+          <Footer
+            color={{
+              bgColor: "bg-white",
+              textColor: "text-secondary",
+            }}
+          ></Footer>
         </div>
       </div>
     </div>
