@@ -3,7 +3,7 @@ import { Navbar, HeadingPage, GallerySection, Footer } from "../";
 import { TabTitle } from "../../../utils/GeneralFunction";
 
 const Gallery = () => {
-  TabTitle("PT Landasindo | Gallery");
+  TabTitle("Gallery - PT Landasindo Sahu Baruna Jaya");
   
   return (
     <div className="w-full overflow-hidden">
