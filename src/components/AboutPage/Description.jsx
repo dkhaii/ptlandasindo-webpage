@@ -3,8 +3,8 @@ import gambar5 from "../../assets/images/gambar5.jpg";
 
 const Description = () => {
   return (
-    <section id="deskription" className="bg-base flex w-full">
-      <div className="flex flex-col xl:px-80 md:px-40 px-16 py-20 w-full justify-center">
+    <section id="deskription" className="bg-base flex flex-col-reverse md:flex-row w-full md:gap-10">
+      <div className="flex flex-col xl:pl-80 md:px-40 px-16 py-20 w-full justify-center">
         <h1 className="font-semibold text-secondary text-4xl my-5">PT. Landasindo Sahu Baruna Jaya</h1>
         <p className="text-dimBlue text-justify text-[10px] lg:text-[14px] leading-loose">
           Dictum at tempor commodo ullamcorper a. Facilisis mauris sit amet massa vitae tortor condimentum. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nec feugiat in fermentum posuere urna nec tincidunt praesent
@@ -14,8 +14,8 @@ const Description = () => {
           fames ac turpis egestas. Sit amet commodo nulla facilisi. Facilisis leo vel fringilla est ullamcorper eget.
         </p>
       </div>
-      <div className="flex w-full h-full object-cover">
-        <img src={gambar5} alt="gambar5" />
+      <div className="w-full">
+        <img src={gambar5} alt="gambar5" className="w-full h-full object-cover"/>
       </div>
     </section>
   );
