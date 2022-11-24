@@ -3,7 +3,7 @@ import { Navbar, Hero, About, Products, Gallery, Contact, Footer } from "../";
 import { TabTitle } from "../../../utils/GeneralFunction";
 
 const Home = () => {
-  TabTitle("PT Landasindo | Home");
+  TabTitle("Home - PT Landasindo Sahu Baruna Jaya");
   
   return (
     <div className="w-full overflow-hidden">

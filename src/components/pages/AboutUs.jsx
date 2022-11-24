@@ -4,7 +4,7 @@ import { TabTitle } from "../../../utils/GeneralFunction";
 import gambar4 from "../../assets/images/gambar4.jpg";
 
 const AboutUs = () => {
-  TabTitle("PT Landasindo | About Us");
+  TabTitle("About Us - PT Landasindo Sahu Baruna Jaya");
   
   return (
     <div className="w-full overflow-hidden">

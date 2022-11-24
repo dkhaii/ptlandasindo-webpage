@@ -3,7 +3,7 @@ import { Navbar, HeadingMap, ContactList, Footer } from "../";
 import { TabTitle } from "../../../utils/GeneralFunction";
 
 const ContactUs = () => {
-  TabTitle("PT Landasindo | Contact Us");
+  TabTitle("Contact Us - PT Landasindo Sahu Baruna Jaya");
   
   return (
     <div className="w-full overflow-hidden">
