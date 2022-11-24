@@ -1,8 +1,11 @@
 import React from "react";
 import { Navbar, HeroImage, HeadingPage, Services, Description, Contact, Footer } from "../";
+import { TabTitle } from "../../../utils/GeneralFunction";
 import gambar4 from "../../assets/images/gambar4.jpg";
 
 const AboutUs = () => {
+  TabTitle("PT Landasindo | About Us");
+  
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
