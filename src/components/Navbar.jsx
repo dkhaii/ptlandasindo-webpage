@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 import logo from "../assets/images/landasindo.png";
 
-const Navbar = () => {
+const Navbar = ({ classes }) => {
   const [trigger, setTrigger] = useState(false);
   const [color, setColor] = useState(false);
 
@@ -18,12 +18,12 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={color ? "transition_opacity bg-white shadow-lg fixed left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20" : "fixed left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20"}>
-      <div className={color ? "flex font-poppins font-semibold text-sm text-secondary" : "flex font-poppins font-semibold text-sm text-white"}>
+    <nav className={color ? `${classes.transition} bg-white shadow-lg fixed left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20` : `fixed ${classes.bg} left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20`}>
+      <div className={color ? `flex font-poppins font-semibold text-sm ${classes.textScroll}` : `flex font-poppins font-semibold text-sm ${classes.textStatic}`}>
         <img src={logo} alt="logo-nav" className="w-10" />
         <h1 className="flex items-center ml-2">PT. Landasindo</h1>
       </div>
-      <div className={color ? "flex font-poppins font-semibold text-sm text-secondary" : "flex font-poppins font-semibold text-sm text-white"}>
+      <div className={color ? `flex font-poppins font-semibold text-sm ${classes.textScroll}` : `flex font-poppins font-semibold text-sm ${classes.textStatic}`}>
         <ul className="hidden list-none lg:flex justify-end items-center flex-none">
           <li className="mr-10">
             <Link to="/" className="transition duration-300 hover:text-accent">

@@ -4,7 +4,6 @@ import Gallery from "./landingPage/Gallery";
 import Hero from "./landingPage/Hero";
 import Products from "./landingPage/Products";
 import Navbar from "./Navbar";
-import NavNormal from "./NavNormal";
 import Footer from "./Footer";
 import Description from "./AboutPage/Description";
 import Services from "./AboutPage/Services";
@@ -20,4 +19,4 @@ import ImageModal from "./galleryPage/ImageModal";
 import HeadingMap from "./contactPage/HeadingMap";
 import ContactList from "./contactPage/ContactList";
 
-export { Navbar, NavNormal, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList };
+export { Navbar, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList };

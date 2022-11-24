@@ -1,12 +1,19 @@
 import React from "react";
-import { NavNormal, HeadingPage, GallerySection, Footer } from "../";
+import { Navbar, HeadingPage, GallerySection, Footer } from "../";
 
 const Gallery = () => {
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
         <div className="w-full">
-          <NavNormal />
+          <Navbar
+            classes={{
+              transition: "",
+              bg: "bg-white",
+              textScroll: "text-secondary",
+              textStatic: "text-secondary",
+            }}
+          />
         </div>
       </div>
 
