@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section id="about" className="xl:px-80 md:px-40 sm:px-16 px-5 pt-28 lg:flex lg:flex-col w-full min-h-screen">
+    <section id="about" className="xl:px-60 md:px-40 sm:px-16 px-5 pt-28 lg:flex lg:flex-col w-full min-h-screen">
       <div className="flex-1 flex items-center md:items-start flex-col">
         <SectionTitle 
         content={{ 

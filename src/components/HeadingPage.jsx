@@ -2,7 +2,7 @@ import React from "react";
 
 const HeadingPage = ({ content }) => {
   return (
-    <section id="heading-about" className="xl:px-80 md:px-36 sm:px-16 px-5 flex flex-col w-full">
+    <section id="heading-about" className="xl:px-60 md:px-36 sm:px-16 px-5 flex flex-col w-full">
       <div className="flex pt-32 pb-14 flex-1 justify-center items-start flex-col">
         <div className="flex flex-row pt-10 justify-between items-center w-full">
           <div className="w-full">

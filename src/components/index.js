@@ -18,5 +18,7 @@ import GallerySection from "./galleryPage/GallerySection";
 import ImageModal from "./galleryPage/ImageModal";
 import HeadingMap from "./contactPage/HeadingMap";
 import ContactList from "./contactPage/ContactList";
+import DescCardKanan from "./productPage/DescCardKanan";
+import DescCardKiri from "./productPage/DescCardKiri";
 
-export { Navbar, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList };
+export { Navbar, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList, DescCardKanan, DescCardKiri };
