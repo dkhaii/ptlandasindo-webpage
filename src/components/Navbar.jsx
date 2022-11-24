@@ -18,7 +18,7 @@ const Navbar = ({ classes }) => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={color ? `${classes.transition} bg-white shadow-lg fixed left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20` : `fixed ${classes.bg} left-0 sm:px-80 px-16 w-full py-8 flex justify-between items-center z-20`}>
+    <nav className={color ? `${classes.transition} bg-white shadow-lg fixed left-0 xl:px-80 md:px-40 sm:px-16 px-5 w-full py-8 flex justify-between items-center z-20` : `fixed ${classes.bg} left-0 xl:px-80 md:px-40 sm:px-16 px-5 w-full py-8 flex justify-between items-center z-20`}>
       <div className={color ? `flex font-poppins font-semibold text-sm ${classes.textScroll}` : `flex font-poppins font-semibold text-sm ${classes.textStatic}`}>
         <img src={logo} alt="logo-nav" className="w-10" />
         <h1 className="flex items-center ml-2">PT. Landasindo</h1>
