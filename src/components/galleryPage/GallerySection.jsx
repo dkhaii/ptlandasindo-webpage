@@ -10,7 +10,7 @@ const GallerySection = () => {
   };
 
   return (
-    <section id="gallery-section" className="bg-base xl:px-60 md:px-40 px-16 py-28 flex flex-row w-full">
+    <section id="gallery-section" className="bg-base xl:px-60 lg:px-40 px-16 py-28 flex flex-row w-full">
       <div className="flex flex-wrap justify-center w-full gap-5">
         <GalleryCard
           content={{

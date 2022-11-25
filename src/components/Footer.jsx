@@ -5,7 +5,7 @@ import logo from "../assets/images/landasindo.png";
 
 const Footer = ({color}) => {
   return (
-    <section id="footer" className={`${color.bgColor} xl:px-60 md:px-40 px-16 w-full`}>
+    <section id="footer" className={`${color.bgColor} xl:px-60 lg:px-40 px-16 w-full`}>
       <div className={`flex flex-col lg:flex-row ${color.textColor}`}>
         <div className="py-10 pr-20 w-full">
           <div className="flex">
