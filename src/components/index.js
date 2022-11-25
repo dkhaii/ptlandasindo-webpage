@@ -20,5 +20,6 @@ import HeadingMap from "./contactPage/HeadingMap";
 import ContactList from "./contactPage/ContactList";
 import DescCardKanan from "./productPage/DescCardKanan";
 import DescCardKiri from "./productPage/DescCardKiri";
+import ContactCard from "./contactPage/ContactCard";
 
-export { Navbar, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList, DescCardKanan, DescCardKiri };
+export { Navbar, Footer, About, Contact, Gallery, Hero, Products, Description, Services, ProductDesc, HeadingPage, HeroImage, ProductCard, SectionTitle, DropdownCard, GalleryCard, GallerySection, ImageModal, HeadingMap, ContactList, DescCardKanan, DescCardKiri, ContactCard };
