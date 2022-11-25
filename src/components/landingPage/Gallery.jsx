@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="xl:px-60 md:px-40 px-16 bg-base py-28 flex flex-col w-full">
+    <section id="gallery" className="xl:px-60 lg:px-40 px-16 bg-base py-28 flex flex-col w-full">
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 flex flex-col items-start">
           <SectionTitle 

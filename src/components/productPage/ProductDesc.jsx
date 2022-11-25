@@ -6,7 +6,7 @@ import oil from "../../assets/images/oil.png";
 
 const ProductDesc = ({}) => {
   return (
-    <section id="product" className="xl:px-60 md:px-40 sm:px-16 px-5 bg-white pt-28 lg:flex lg:flex-col w-full">
+    <section id="product" className="xl:px-60 lg:px-40 sm:px-16 px-5 bg-white pt-28 lg:flex lg:flex-col w-full">
       <div className="flex items-center flex-col">
         <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">OUR PRODUCT</div>
         <div className="lg:mt-2">
