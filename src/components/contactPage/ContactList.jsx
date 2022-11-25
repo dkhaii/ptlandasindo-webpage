@@ -7,6 +7,10 @@ import facebook from "../../assets/svg/facebook.svg";
 import linkedin from "../../assets/svg/linkedin.svg";
 
 const ContactList = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="contact-list" className="xl:px-60 lg:px-40 sm:px-16 px-5 w-full">
       <div className="flex flex-col w-full">
@@ -56,7 +60,7 @@ const ContactList = () => {
           Get to know us <span className="text-accent text-7xl">.</span>
         </h1>
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-5">
-          <div className="p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl">
+          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.instagram.com/landasindo_official/")}>
             <ContactCard
               content={{
                 img: instagram,
@@ -65,7 +69,7 @@ const ContactList = () => {
               }}
             />
           </div>
-          <div className="p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl">
+          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.facebook.com/Landasindo")}>
             <ContactCard
               content={{
                 img: facebook,
@@ -74,7 +78,7 @@ const ContactList = () => {
               }}
             />
           </div>
-          <div className="p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl">
+          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.linkedin.com/company/pt-landasindo-sahu-baruna-jaya/")}>
             <ContactCard
               content={{
                 img: linkedin,
