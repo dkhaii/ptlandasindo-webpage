@@ -24,13 +24,10 @@ const Carousel = ({ content }) => {
     }
   };
 
-  console.log(imgIndex);
-
   if (!Array.isArray(content) || content.length <= 0) {
     return null;
   }
 
-  console.log("karusel", content);
   return (
     <div className="relative w-full h-[640px] rounded-xl">
       <div className="absolute text-[40px] top-2/4 bg-natural flex justify-center items-center w-[40px] h-[40px] rounded-full cursor-pointer left-[15px] hover:bg-slate-400 hover:scale-110 duration-300 z-40" onClick={prev}>
