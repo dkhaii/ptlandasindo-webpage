@@ -28,7 +28,7 @@ const Gallery = () => {
   return (
     <>
       <section id="gallery" className="xl:px-60 lg:px-40 sm:px-16 px-5 py-28 bg-base flex flex-col w-full gap-20 ">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <div className="flex-1 items-start">
             <SectionTitle
               content={{
