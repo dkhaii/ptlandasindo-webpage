@@ -33,10 +33,10 @@ const Carousel = ({ content }) => {
   console.log("karusel", content);
   return (
     <div className="relative w-full h-[640px] rounded-xl shadow-lg">
-      <div className="absolute text-[40px] top-2/4 bg-natural flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer left-[15px]" onClick={prev}>
+      <div className="absolute text-[40px] top-2/4 bg-natural flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer left-[15px] hover:bg-slate-400 duration-300" onClick={prev}>
         &lsaquo;
       </div>
-      <div className="absolute text-[40px] top-2/4 bg-natural flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer right-[15px]" onClick={next}>
+      <div className="absolute text-[40px] top-2/4 bg-natural flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer right-[15px] hover:bg-slate-400 duration-300" onClick={next}>
         &rsaquo;
       </div>
 
