@@ -4,7 +4,7 @@ import { TabTitle } from "../../../utils/GeneralFunction";
 
 const ContactUs = () => {
   TabTitle("Contact Us - PT Landasindo Sahu Baruna Jaya");
-  
+
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">

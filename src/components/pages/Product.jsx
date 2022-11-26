@@ -5,7 +5,7 @@ import gambar6 from "../../assets/images/gambar6.jpg";
 
 const Product = () => {
   TabTitle("Product - PT Landasindo Sahu Baruna Jaya");
-  
+
   return (
     <div className="w-full overflow-hidden">
       <div className="flex justify-center items-center w-full">
