@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import gambar3 from "../../assets/images/gambar3.jpg"
+import gambar3 from "../../assets/images/gambar3.jpg";
 
 const Hero = () => {
   const vidioRef = useRef();
@@ -8,7 +8,7 @@ const Hero = () => {
     <section id="home" className="flex flex-col w-full h-[768px]">
       <div className="absolute -z-10">
         <div className="absolute min-h-screen w-full bg-darker bg-opacity-90"></div>
-        <img src={gambar3} alt="gambar-3" className="object-cover min-h-screen"/>
+        <img src={gambar3} alt="gambar-3" className="object-cover min-h-screen" />
       </div>
       <div className="xl:px-60 lg:px-40 sm:px-16 px-5 py-32 flex-1 flex justify-center items-start flex-col">
         <div className="flex flex-row justify-between items-center w-full">

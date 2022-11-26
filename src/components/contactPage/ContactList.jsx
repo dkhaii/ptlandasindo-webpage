@@ -78,7 +78,10 @@ const ContactList = () => {
               }}
             />
           </div>
-          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.linkedin.com/company/pt-landasindo-sahu-baruna-jaya/")}>
+          <div
+            className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl"
+            onClick={() => openInNewTab("https://www.linkedin.com/company/pt-landasindo-sahu-baruna-jaya/")}
+          >
             <ContactCard
               content={{
                 img: linkedin,

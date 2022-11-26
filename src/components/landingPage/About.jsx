@@ -7,13 +7,13 @@ const About = () => {
   return (
     <section id="about" className="xl:px-60 lg:px-40 sm:px-16 px-5 pt-28 lg:flex lg:flex-col w-full min-h-screen">
       <div className="flex-1 flex items-center md:items-start flex-col">
-        <SectionTitle 
-        content={{ 
-          subTitle: "OUR BUSINESS",
-          title: "About Us"
-         }}
-         bgColor={"bg-natural"}
-         />
+        <SectionTitle
+          content={{
+            subTitle: "OUR BUSINESS",
+            title: "About Us",
+          }}
+          bgColor={"bg-natural"}
+        />
         <div className="py-20 flex flex-col lg:flex-row lg:gap-10">
           <div className="flex justify-center">
             <img src={gambar1} alt="gambar1" className="w-80 mb-5 lg:w-96 rounded-xl shadow-xl" />

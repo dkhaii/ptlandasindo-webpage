@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const DescCardKanan = ({ content }) => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-10">

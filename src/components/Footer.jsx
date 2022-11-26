@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Contact } from "./";
 import logo from "../assets/images/landasindo.png";
 
-const Footer = ({color}) => {
+const Footer = ({ color }) => {
   return (
     <section id="footer" className={`${color.bgColor} xl:px-60 lg:px-40 px-16 w-full`}>
       <div className={`flex flex-col lg:flex-row ${color.textColor}`}>
@@ -70,7 +70,7 @@ const Footer = ({color}) => {
           <p className="pt-5 text-sm leading-loose">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
       </div>
-    <div className={`flex justify-center lg:justify-end py-5 ${color.textColor}`}>Copyright © Landasindo. All Rights Reserved</div>
+      <div className={`flex justify-center lg:justify-end py-5 ${color.textColor}`}>Copyright © Landasindo. All Rights Reserved</div>
     </section>
   );
 };
