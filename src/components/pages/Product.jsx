@@ -17,6 +17,10 @@ const Product = () => {
               textScroll: "text-secondary",
               textStatic: "text-secondary",
             }}
+            hamburgerColor={{
+              noScroll: "#03254c",
+              isScroll: "#03254c",
+            }}
           />
         </div>
       </div>
