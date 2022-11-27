@@ -12,7 +12,6 @@ import HeadingPage from "./HeadingPage";
 import HeroImage from "./HeroImage";
 import ProductCard from "./landingPage/ProductCard";
 import SectionTitle from "./landingPage/SectionTitle";
-import DropdownCard from "./productPage/DropdownCard";
 import GalleryCard from "./galleryPage/GalleryCard";
 import GallerySection from "./galleryPage/GallerySection";
 import ImageModal from "./galleryPage/ImageModal";
@@ -38,7 +37,6 @@ export {
   HeroImage,
   ProductCard,
   SectionTitle,
-  DropdownCard,
   GalleryCard,
   GallerySection,
   ImageModal,
