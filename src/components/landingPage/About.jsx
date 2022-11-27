@@ -1,21 +1,28 @@
 import React from "react";
 import gambar1 from "../../assets/images/gambar1.jpg";
 import ornamen from "../../assets/svg/dotOrnament.svg";
+import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section id="about" className="pt-28 lg:flex lg:flex-col w-full min-h-screen">
-      <div className="flex-1 flex items-start flex-col">
-        <div className="flex justify-center bg-natural px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">OUR BUSINESS</div>
-        <div className="lg:mt-2">
-          <h1 className="text-[40px] lg:text-4xl font-semibold">About Us</h1>
+    <section id="about" className="xl:px-60 lg:px-40 sm:px-16 px-5 pt-28 lg:flex lg:flex-col w-full min-h-screen">
+      <div className="flex-1 flex items-center md:items-start flex-col">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <SectionTitle
+            content={{
+              subTitle: "OUR BUSINESS",
+              title: "About Us",
+            }}
+            bgColor={"bg-natural"}
+          />
         </div>
         <div className="py-20 flex flex-col lg:flex-row lg:gap-10">
-          <div className="flex justify-center">
-            <img src={gambar1} alt="gambar1" className="w-80 mb-5 lg:w-96 rounded-xl shadow-xl" />
-            <img src={ornamen} alt="ornamen1" className="absolute top-0 left-0" />
+          <div className="relative flex justify-center mb-5" data-aos="fade-right" data-aos-duration="1000">
+            <img src={gambar1} alt="gambar1" className="w-80 lg:w-96 rounded-xl shadow-xl z-10" />
+            <img src={ornamen} alt="ornamen1" className="absolute -top-10 -left-10" />
+            <img src={ornamen} alt="ornamen1" className="absolute -bottom-10 -right-10" />
           </div>
-          <div className="flex-1 flex items-center">
+          <div className="flex-1 flex items-center" data-aos="fade-left" data-aos-duration="1000">
             <p className="text-justify text-[12px] lg:text-[16px] leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Sed vulputate mi sit amet. Fames ac
               turpis egestas integer eget aliquet nibh praesent tristique. Donec ultrices tincidunt arcu non sodales neque sodales ut. Dui nunc mattis enim ut tellus elementum. Eget mauris pharetra et ultrices neque ornare aenean euismod.
@@ -28,11 +35,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="py-5 lg:py-20 flex flex-col lg:flex-row lg:gap-10">
-          <div className="lg:hidden flex justify-center">
-            <img src={gambar1} alt="gambar1" className="w-80 mb-5 lg:w-96 rounded-xl shadow-xl" />
-          </div>
-          <div className="flex-1 flex items-center">
+        <div className="py-5 lg:py-20 flex flex-col-reverse lg:flex-row lg:gap-10">
+          <div className="flex-1 flex items-center" data-aos="fade-right" data-aos-duration="1000">
             <p className="text-justify text-[12px] lg:text-[16px] leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Sed vulputate mi sit amet. Fames ac
               turpis egestas integer eget aliquet nibh praesent tristique. Donec ultrices tincidunt arcu non sodales neque sodales ut. Dui nunc mattis enim ut tellus elementum. Eget mauris pharetra et ultrices neque ornare aenean euismod.
@@ -44,8 +48,10 @@ const About = () => {
               faucibus turpis. Sem viverra aliquet eget sit amet. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Id donec ultrices tincidunt arcu non sodales neque sodales. Risus quis varius quam quisque id diam.
             </p>
           </div>
-          <div className="hidden lg:flex justify-center">
-            <img src={gambar1} alt="gambar1" className="w-80 lg:w-96 rounded-xl shadow-xl" />
+          <div className="relative flex justify-center mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <img src={gambar1} alt="gambar1" className="w-80 lg:w-96 rounded-xl shadow-xl z-10" />
+            <img src={ornamen} alt="ornamen1" className="absolute -top-10 -left-10" />
+            <img src={ornamen} alt="ornamen1" className="absolute -bottom-10 -right-10" />
           </div>
         </div>
       </div>

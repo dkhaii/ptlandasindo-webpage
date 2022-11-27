@@ -1,66 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { SectionTitle, Carousel } from "../";
+import gambar1 from "../../assets/images/gambar1.jpg";
+import gambar2 from "../../assets/images/gambar2.jpg";
+import gambar3 from "../../assets/images/gambar3.jpg";
+import gambar4 from "../../assets/images/gambar4.jpg";
+import gambar5 from "../../assets/images/gambar5.jpg";
 
 const Gallery = () => {
+  const dataImg = [
+    {
+      imgUrl: gambar1,
+    },
+    {
+      imgUrl: gambar2,
+    },
+    {
+      imgUrl: gambar3,
+    },
+    {
+      imgUrl: gambar4,
+    },
+    {
+      imgUrl: gambar5,
+    },
+  ];
+
   return (
-    <section id="gallery" className="bg-base py-28 flex flex-col w-full">
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex-1 flex flex-col items-start">
-          <div className="flex justify-center bg-white px-3 py-2 rounded-lg text-[12px] lg:text-sm font-bold">GALLERY</div>
-          <div className="lg:mt-2">
-            <h1 className="text-[40px] lg:text-4xl font-semibold">Gallery from Landasindo</h1>
+    <>
+      <section id="gallery" className="xl:px-60 lg:px-40 sm:px-16 px-5 py-28 bg-base flex flex-col w-full gap-20 ">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="flex-1 items-start" data-aos="fade-right" data-aos-duration="1000">
+            <SectionTitle
+              content={{
+                subTitle: "GALLERY",
+                title: "Gallery from Landasindo",
+              }}
+              bgColor={"bg-white"}
+            />
+          </div>
+          <div className="mt-5 flex items-end" data-aos="fade-left" data-aos-duration="1000">
+            <Link to="/gallery" className="btn btn-outline btn-accent text-lg px-16">LOAD MORE</Link>
           </div>
         </div>
-        <div className="mt-5 flex items-end">
-          <button className="btn btn-outline btn-accent text-lg px-16">LOAD MORE </button>
+        <div className="z-10" data-aos="fade-up" data-aos-duration="3000">
+          <Carousel content={dataImg} />
         </div>
-      </div>
-      <div className="carousel w-full rounded-xl mt-20 hidden lg:flex">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img src="https://placeimg.com/800/200/arch" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img src="https://placeimg.com/800/200/arch" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img src="https://placeimg.com/800/200/arch" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img src="https://placeimg.com/800/200/arch" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
