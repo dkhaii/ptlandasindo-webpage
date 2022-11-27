@@ -16,6 +16,10 @@ const Gallery = () => {
               textScroll: "text-secondary",
               textStatic: "text-secondary",
             }}
+            hamburgerColor={{
+              noScroll: "#03254c",
+              isScroll: "#03254c",
+            }}
           />
         </div>
       </div>
@@ -36,12 +40,6 @@ const Gallery = () => {
           <GallerySection />
         </div>
       </div>
-
-      {/* <div className="flex justify-center items-center w-full">
-        <div className="w-full">
-          <Contact />
-        </div>
-      </div> */}
 
       <div className="flex justify-center items-center w-full">
         <div className="w-full">

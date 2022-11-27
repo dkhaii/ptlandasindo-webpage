@@ -16,6 +16,10 @@ const Home = () => {
               textScroll: "text-secondary",
               textStatic: "text-white",
             }}
+            hamburgerColor={{
+              noScroll: "#03254c",
+              isScroll: "#fff",
+            }}
           ></Navbar>
         </div>
       </div>

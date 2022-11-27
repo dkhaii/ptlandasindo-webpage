@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 import logo from "../assets/images/landasindo.png";
 
-const Navbar = ({ classes }) => {
+const Navbar = ({ classes, hamburgerColor }) => {
   const [trigger, setTrigger] = useState(false);
   const [color, setColor] = useState(false);
+  const [isRoute, setIsRoute] = useState("")
 
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -58,7 +59,7 @@ const Navbar = ({ classes }) => {
           </li>
         </ul>
         <div className="lg:hidden flex flex-1 justify-end items-center">
-          <Hamburger size={24} color={color ? "#03254c" : "#fff"} onToggle={() => setTrigger((prev) => !prev)} rounded />
+          <Hamburger size={24} color={color ? `${hamburgerColor.noScroll}` : `${hamburgerColor.isScroll}`} onToggle={() => setTrigger((prev) => !prev)} rounded />
           <div
             className={trigger ? "flex justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-secondary" : "hidden justify-center p-6 bg-white absolute top-24 right-0 min-w-full shadow-lg sidebar text-white"}
           >
