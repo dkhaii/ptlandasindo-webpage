@@ -62,47 +62,41 @@ const ContactList = () => {
           Get to know us <span className="text-accent text-7xl">.</span>
         </h1>
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-5">
-          <div
-            className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl"
-            onClick={() => openInNewTab("https://www.instagram.com/landasindo_official/")}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <ContactCard
-              content={{
-                img: instagram,
-                title: "instagram",
-                desc: "@landasindo_official",
-              }}
-            />
+          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.instagram.com/landasindo_official/")}>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <ContactCard
+                content={{
+                  img: instagram,
+                  title: "instagram",
+                  desc: "@landasindo_official",
+                }}
+              />
+            </div>
           </div>
-          <div
-            className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl"
-            onClick={() => openInNewTab("https://www.facebook.com/Landasindo")}
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <ContactCard
-              content={{
-                img: facebook,
-                title: "facebook",
-                desc: "PT Landasindo Sahu Baruna Jaya",
-              }}
-            />
+          <div className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl" onClick={() => openInNewTab("https://www.facebook.com/Landasindo")}>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <ContactCard
+                content={{
+                  img: facebook,
+                  title: "facebook",
+                  desc: "PT Landasindo Sahu Baruna Jaya",
+                }}
+              />
+            </div>
           </div>
           <div
             className="cursor-pointer p-5 w-full hover:bg-natural hover:shadow-md hover:-translate-y-2 hover:scale-110 duration-300 rounded-xl"
             onClick={() => openInNewTab("https://www.linkedin.com/company/pt-landasindo-sahu-baruna-jaya/")}
-            data-aos="fade-up"
-            data-aos-duration="3000"
           >
-            <ContactCard
-              content={{
-                img: linkedin,
-                title: "linkedin",
-                desc: "PT Landasindo Sahu Baruna Jaya",
-              }}
-            />
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <ContactCard
+                content={{
+                  img: linkedin,
+                  title: "linkedin",
+                  desc: "PT Landasindo Sahu Baruna Jaya",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
