@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Contact } from "./";
 import logo from "../assets/images/landasindo.png";
+import instagram from "../assets/svg/instagram.svg";
+import facebook from "../assets/svg/facebook.svg";
+import linkedin from "../assets/svg/linkedin.svg";
 
 const Footer = ({ color }) => {
   return (
@@ -67,7 +70,17 @@ const Footer = ({ color }) => {
 
         <div className="py-10 pr-20 lg:px-20 w-full">
           <h1 className="font-semibold">Social Media</h1>
-          <p className="pt-5 text-sm leading-loose">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div className="mt-5 flex flex-row lg:flex-col gap-5">
+            <div className=" p-2 bg-natural rounded-full lg:w-1/4 flex justify-center hover:bg-accent duration-500">
+              <img src={instagram} alt="instagram" />
+            </div>
+            <div className=" p-2 bg-natural rounded-full lg:w-1/4 flex justify-center hover:bg-accent duration-500">
+              <img src={facebook} alt="facebook" />
+            </div>
+            <div className=" p-2 bg-natural rounded-full lg:w-1/4 flex justify-center hover:bg-accent duration-500">
+              <img src={linkedin} alt="linkedin" />
+            </div>
+          </div>
         </div>
       </div>
       <div className={`flex justify-center lg:justify-end py-5 ${color.textColor}`}>Copyright © Landasindo. All Rights Reserved</div>
