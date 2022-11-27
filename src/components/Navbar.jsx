@@ -83,8 +83,8 @@ const Navbar = ({ classes }) => {
                   GALLERY
                 </Link>
               </li>
-              <li className="/contact-us">
-                <Link to="" className="transition duration-300 hover:text-accent">
+              <li className="">
+                <Link to="/contact-us" className="transition duration-300 hover:text-accent">
                   CONTACT US
                 </Link>
               </li>

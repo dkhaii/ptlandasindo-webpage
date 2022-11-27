@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SectionTitle, Carousel } from "../";
 import gambar1 from "../../assets/images/gambar1.jpg";
 import gambar2 from "../../assets/images/gambar2.jpg";
@@ -29,7 +30,7 @@ const Gallery = () => {
     <>
       <section id="gallery" className="xl:px-60 lg:px-40 sm:px-16 px-5 py-28 bg-base flex flex-col w-full gap-20 ">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex-1 items-start">
+          <div className="flex-1 items-start" data-aos="fade-right" data-aos-duration="1000">
             <SectionTitle
               content={{
                 subTitle: "GALLERY",
@@ -38,11 +39,11 @@ const Gallery = () => {
               bgColor={"bg-white"}
             />
           </div>
-          <div className="mt-5 flex items-end">
-            <button className="btn btn-outline btn-accent text-lg px-16">LOAD MORE </button>
+          <div className="mt-5 flex items-end" data-aos="fade-left" data-aos-duration="1000">
+            <Link to="/gallery" className="btn btn-outline btn-accent text-lg px-16">LOAD MORE</Link>
           </div>
         </div>
-        <div className="z-10">
+        <div className="z-10" data-aos="fade-up" data-aos-duration="3000">
           <Carousel content={dataImg} />
         </div>
       </section>
